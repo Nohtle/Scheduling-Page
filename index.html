@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Agendamento</title>
+    <meta name="description" content="Agende seu horário de forma rápida e fácil">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-calendar-check"></i> Sistema de Agendamento</h1>
+            <p class="tagline">Agende seu horário de forma simples e rápida</p>
+        </div>
+    </header>
+    <main>
+        <div class="card">
+            <div class="card-header">
+                <h2><i class="fas fa-clock"></i> Agende seu Horário</h2>
+                <p>Preencha o formulário abaixo para agendar</p>
+            </div>
+            <form id="agendamento-form">
+                <div class="form-group">
+                    <label for="nome"><i class="fas fa-user"></i> Nome completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone"><i class="fas fa-phone"></i> Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="data"><i class="fas fa-calendar"></i> Data:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hora"><i class="fas fa-clock"></i> Hora:</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="servico"><i class="fas fa-list"></i> Serviço:</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="avaliacao">Avaliação</option>
+                        <option value="revisao">Revisão</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="observacoes"><i class="fas fa-comment"></i> Observações:</label>
+                    <textarea id="observacoes" name="observacoes" placeholder="Opcional: Adicione alguma observação importante"></textarea>
+                </div>
+
+                <button type="submit"><i class="fas fa-paper-plane"></i> Agendar Agora</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Av. Principal, 123 - Centro</p>
+                    <p><i class="fas fa-phone"></i> (00) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> contato@agendamento.com</p>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2025 Sistema de Agendamento | Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
